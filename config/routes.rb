@@ -1,4 +1,8 @@
 Omrails::Application.routes.draw do
+  devise_for :users
+
+  #devise_for :installs
+
  # get "pages/home"
 
   # The priority is based upon order of creation:
