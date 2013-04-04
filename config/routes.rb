@@ -4,6 +4,9 @@ Omrails::Application.routes.draw do
 
   devise_for :users
 
+  get 'about' => 'pages#about'
+    root :to => 'pins#index'
+
   #devise_for :installs
 
  # get "pages/home"
@@ -54,10 +57,10 @@ Omrails::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-get 'about' => 'pages#about'
+
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'pages#home'
+
 
   # See how all your routes lay out with "rake routes"
 
